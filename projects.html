@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <div class="projects-top-nav">
+    <button class="back-btn" onclick="location.href='./#projects'" aria-label="Go back">
+       &#8592; Back
+    </button>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <div class="toggle-icon">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </div>
+    </button>
+  </div>
+ 
+  <section id="projects">
+    <p class="section_text_p1">Browse My</p>
+    <h1 class="title">Projects</h1>
+    <div class="skills-details-container">
+      <div class="about-containers">
+        <!-- Ecommerce - Website -->
+        <div class="details-container color-container" style="order: 1">
+          <div class="article-container">
+            <img src="./assets/project-ecommerce.png" alt="Project 1" class="project-img"/>
+          </div>
+          <h2 class="skills-sub-title project-title">Ecommerce - Website</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/kalai64/E-Commerce')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://frontend-nine-theta-88.vercel.app/')">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <!-- Netflix - clone -->
+        <div class="details-container color-container" style="order: 2;">
+          <div class="article-container">
+            <img src="./assets/project-netflix.png" alt="Project 2" class="project-img"/>
+          </div>
+          <h2 class="skills-sub-title project-title">Netflix-clone</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/kalai64/Netflix-clone')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://netflix-clone-2sly.onrender.com/')">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <!-- Notes-App -->
+        <div class="details-container color-container" style="order: 3;">
+          <div class="article-container">
+            <img src="./assets/notes-app.png" alt="Project 3" class="project-img"/>
+          </div>
+          <h2 class="skills-sub-title project-title">Notes - Application</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/kalai64/Notes-App')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://notes-app-coral-delta-59.vercel.app/')">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <!-- Chat - App -->
+        <div class="details-container color-container" style="order: 4;">
+          <div class="article-container">
+            <img src="./assets/project-chatapp.png" alt="Project 2" class="project-img"/>
+          </div>
+          <h2 class="skills-sub-title project-title">Chat-App</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/kalai64/Chat-App')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://chat-app-0qmw.onrender.com/login')">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <!-- ToDo - App -->
+        <div class="details-container color-container" style="order: 5;">
+          <div class="article-container">
+            <img src="./assets/project-todo.png" alt="Project 3" class="project-img"/>
+          </div>
+          <h2 class="skills-sub-title project-title">ToDo - MERN Application</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/kalai64/fullstack-todo-app-frontend')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://fullstack-todo-app-frontend-brown.vercel.app/')">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <!-- Weather - App -->
+        <div class="details-container color-container" style="order: 6;">
+          <div class="article-container">
+            <img src="./assets/project-weather.png" alt="Project 3" class="project-img"/>
+          </div>
+          <h2 class="skills-sub-title project-title">Weather Application</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/kalai64/weather-app')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://weather-app-one-nu-42.vercel.app/')">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a onclick="location.href='./#about'" style="cursor: pointer">About</a></li>
+          <li><a onclick="location.href='./#skills'" style="cursor: pointer">skills</a></li>
+          <li><a onclick="location.href='./#projects'" style="cursor: pointer">Projects</a></li>
+          <li><a onclick="location.href='./#contact'" style="cursor: pointer">Contact</a></li>
+      </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Kalaiyarasan. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

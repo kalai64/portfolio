@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Kalaiyarasan A</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                    <div class="toggle-icon">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </div>
+                </button></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Kalaiyarasan A</div>
+        <div class="hamburger-menu-container">
+          <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+              <div class="toggle-icon">
+                  <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <line x1="12" y1="1" x2="12" y2="3"></line>
+                      <line x1="12" y1="21" x2="12" y2="23"></line>
+                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                      <line x1="1" y1="12" x2="3" y2="12"></line>
+                      <line x1="21" y1="12" x2="23" y2="12"></line>
+                      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                  <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                  </svg>
+              </div>
+          </button>
+          <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+          </div>
+        </div>
+          
+    </nav>
+    <!-- profile -->
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.png" alt="Kalaiyarasan A profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Kalaiyarasan A</h1>
+            <p class="section_text_p2">Full Stack Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                 onclick="window.open('./assets/resume.pdf')"
+                >Download CV</button>
+                <button
+                class="btn btn-color-1"
+                onclick="location.href='./#contact'"
+                >Contact Info</button>
+            </div>
+            <div class="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linked In profile" 
+                class="icon" onclick="window.open('https://linkedin.com/in/kalaiyarasan-anandan-a44243298')"
+                />
+                <img src="./assets/github.png" alt="My Github In profile" 
+                class="icon" onclick="window.open('https://github.com/kalai64')"
+                />
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/about-pic.png" 
+                alt="Profile Picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                        alt="skills icon"
+                        class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>1.2 Years <br/>Legacies Techno Pvt</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Bachelor of Engineering<br/>Mechanical</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>To work as a Full Stack Developer with 1.2 years of professional experience, applying my knowledge of responsive web design, development, and maintenance to build efficient and user centric applications. Seeking an opportunity to showcase my skills and contribute to the company’s growth.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#skills'"
+        />
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="skills-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML 5</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS 3</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Tailwind css</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>React JS</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Next Js</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Svelte Kit</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="skills-sub-title">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Node Js</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Express Js</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Mongo DB</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Ms SQL</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>PostgreSQL</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>API</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>RestAPI</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git & Github</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+    </section>
+    <!-- projects -->
+    <section id="projects">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <!-- TPB Project -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/fnf.png" alt="Project 1" class="project-img"/>
+          </div>
+          <h2 class="skills-sub-title project-title">Title Plant Builder (TPB)</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="openProjectSlider('tpb')">View Details</button>
+          </div>
+        </div>
+        
+        <!-- Factory Tool -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/factory_tool.png" alt="Project 3" class="project-img"/>
+          </div>
+          <h2 class="skills-sub-title project-title">Factory Tool</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="openProjectSlider('fm')">View Details</button>
+
+          </div>
+        </div>
+        <!-- Vault -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/lynt_X.png" alt="Project 3" class="project-img"/>
+          </div>
+          <h2 class="skills-sub-title project-title">Lyntx Labs – Vault</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="openProjectSlider('vault')">View Details</button>
+          </div>
+        </div>
+        <button class="btn btn-color-1" onclick="window.location.href='projects.html'">More Projects</button>
+      </div>
+      </div>
+      <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+    </section>
+    <!-- contact -->
+    <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+          <p><a href="mailto:kalaikabil6464@gmail.com">kalaikabil6464@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon"/>
+          <p><a href="https://linkedin.com/in/kalaiyarasan-anandan-a44243298" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Kalaiyarasan. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Shared Project Slider -->
+    <div class="project-overlay" id="projectOverlay" onclick="closeProjectSlider()"></div>
+    <div class="project-slider" id="projectSlider">
+      <button class="slider-close-btn" onclick="closeProjectSlider()">&#215;</button>
+      <img src="" alt="" class="slider-project-img" id="sliderImg"/>
+      <h2 class="slider-project-title" id="sliderTitle"></h2>
+      <p class="slider-project-desc" id="sliderDesc"></p>
+      <p class="slider-section-heading">Tech Stack</p>
+      <div class="slider-tags" id="sliderTags"></div>
+      <h3 class="slider-section-heading">Key Features</h3>
+      <ul class="slider-features" id="sliderFeatures"></ul>
+      <h3 class="slider-section-heading">My Role</h3>
+      <p class="slider-project-desc" id="sliderRole"></p>
+      <div class="slider-btn-container" id="sliderBtns"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
